@@ -4,9 +4,73 @@
 	<meta charset="UTF-8">
 	<title>Device</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css?2">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-
+	<header class="main-header container">
+		<a class="main-logo">Device</a>
+    <div class="header-first-line">
+      <form action="/echo" type="get" class="search">
+        <label for="search-input" class="search-label">
+          <span class="visually-hidden">Поиск по сайту</span>
+        </label>
+        <input type="text" id="search-input" class="search-input" placeholder="Поиск по сайту">
+        <button type="submit" class="search-button button">Найти</button>
+      </form>
+      <ul class="user-menu list">
+        <li class="user-menu-item list-item">
+          <a href="#" class="user-menu-link list-link log-in">Войти</a>
+        </li>
+      </ul>
+      <ul class="tabs list">
+        <li class="tabs-item list-item">
+          <a href="#" class="tabs-link list-link compare">Сравнить</a>
+        </li>
+        <li class="tabs-item list-item">
+          <a href="#" class="tabs-link list-link cart">Корзина</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.header-first-line -->
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li class="site-navigation-item goods-catalog">
+          <a href="#" class="site-navigation-link goods-catalog-link">Каталог товаров</a>
+          <div class="hidden-block">
+            <ul class="hidden-list">
+              <li class="hidden-list-item">
+                <a href="#" class="hidden-list-link">Виртуальная реальность</a>
+              </li>
+              <li class="hidden-list-item">
+                <a href="#" class="hidden-list-link">Моноподы для селфи</a>
+              </li>
+              <li class="hidden-list-item">
+                <a href="#" class="hidden-list-link">Экшн-камеры</a>
+              </li>
+              <li class="hidden-list-item">
+                <a href="#" class="hidden-list-link">Фитнесс-браслеты</a>
+              </li>
+              <li class="hidden-list-item">
+                <a href="#" class="hidden-list-link">Умные часы</a>
+              </li>
+              <li class="hidden-list-item">
+                <a href="#" class="hidden-list-link">Квадрокоптеры</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="site-navigation-item">
+          <a href="#" class="site-navigation-link">Доставка</a>
+        </li>
+        <li class="site-navigation-item">
+          <a href="#" class="site-navigation-link">Гарантия</a>
+        </li>
+        <li class="site-navigation-item">
+          <a href="#" class="site-navigation-link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 </body>
 </html>
