@@ -392,10 +392,15 @@ input[type="radio"].visually-hidden {
 
   overflow: hidden;
   background-color: #f7e296;
+
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .goods-catalog-link:hover + .hidden-block {
   height: 168px;
+
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
