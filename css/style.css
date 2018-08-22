@@ -60,6 +60,10 @@ input[type="radio"].visually-hidden {
   margin-top: 40px;
 }
 
+.index-page-header .main-navigation {
+  padding-bottom: 165px;
+}
+
 .header-first-line,
 .main-navigation {
   padding-left: 60px;
@@ -287,11 +291,8 @@ input[type="radio"].visually-hidden {
 /* header-second-line */
 
 .main-navigation {
+  position: relative;
   padding-bottom: 52px;
-}
-
-.site-navigation {
-  line-height: 22px;
 }
 
 .site-navigation {
@@ -301,6 +302,21 @@ input[type="radio"].visually-hidden {
   display: -o-flex;
   display: flex;
   justify-content: flex-end;
+
+  line-height: 22px;
+}
+
+.index-page-header .site-navigation::after {
+  content: "";
+  position: absolute;
+  top: 113px;
+  right: 460px;
+  z-index: 1;
+
+  height: 7px;
+  width: 100px;
+
+  background-color: #ffffff;
 }
 
 .site-navigation-item:nth-child(1) {
@@ -368,23 +384,25 @@ input[type="radio"].visually-hidden {
 .hidden-block {
   position: absolute;
   top: 20px;
+  z-index: 2;
 
   height: 0;
   width: 1160px;
-
   margin-left: -60px;
+
   overflow: hidden;
+  background-color: #f7e296;
 }
 
 .goods-catalog-link:hover + .hidden-block {
-  height: 165px;
+  height: 168px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 
 .hidden-block:hover {
-  height: 165px;
+  height: 168px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -392,7 +410,7 @@ input[type="radio"].visually-hidden {
 
 .hidden-list {
   position: absolute;
-  top: 3px;
+  top: 0;
   left: 0;
 
   display: -webkit-flex;
@@ -413,16 +431,16 @@ input[type="radio"].visually-hidden {
   align-content: flex-start;
 
   width: 1160px;
-  height: 110px;
+  height: 168px;
   padding-left: 60px;
   padding-right: 60px;
-  margin-top: 52px;
+  padding-top: 23px;
+  padding-bottom: 35px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 
   overflow: hidden;
-  background-color: #f7e184;
 }
 
 .hidden-list-item {
