@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Device</title>
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css?3">
+	<link rel="stylesheet" href="css/style.css?4">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
@@ -16,7 +16,7 @@
           <span class="visually-hidden">Поиск по сайту</span>
         </label>
         <input type="text" id="search-input" class="search-input" placeholder="Поиск по сайту">
-        <button type="submit" class="search-button button">Найти</button>
+        <button type="submit" class="search-button">Найти</button>
       </form>
       <ul class="user-menu list">
         <li class="user-menu-item list-item">
@@ -72,5 +72,120 @@
       </ul>
     </nav>
   </header>
+  <main>
+    <section class="slider container">
+      <input type="radio" name="slider-controlls" id="slider-btn-1" class="slider-radio" checked>
+      <input type="radio" name="slider-controlls" id="slider-btn-2" class="slider-radio">
+      <input type="radio" name="slider-controlls" id="slider-btn-3" class="slider-radio">
+      <div class="slider-controlls">
+        <label for="slider-btn-1" class="slider-label">
+          <span class="visually-hidden">Первый слайд</span>
+        </label>
+        <label for="slider-btn-2" class="slider-label">
+          <span class="visually-hidden">Второй слайд</span>
+        </label>
+        <label for="slider-btn-3" class="slider-label">
+          <span class="visually-hidden">Третий слайд</span>
+        </label>
+      </div>
+      <!-- /.slider-controlls -->
+      <div class="slides">
+        <div class="slide">
+          <div class="slide-img-block">
+            <img src="img/slider/slide1.png" alt="Самая длинная палка для селфи" class="slide-img" width="384" height="486">
+          </div>
+          <div class="slide-content">
+            <p class="slide-title">
+              Делай селфи, <br>как Бен Стиллер!
+            </p>
+            <p class="slide-text">
+              Самая длинная палка для селфи доступна в нашем магазине. <br>
+              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+            </p>
+            <a href="#" class="slide-button button">Подробнее</a>
+            <table class="slide-tabel">
+              <thead>
+                <tr class="slide-tabel-row">
+                  <th class="slide-table-title">Длина палки</th>
+                  <th class="slide-table-title">Вес палки</th>
+                  <th class="slide-table-title">Материал</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="slide-tabel-row">
+                  <td class="slide-tabel-content">8,5 м</td>
+                  <td class="slide-tabel-content">5 кг</td>
+                  <td class="slide-tabel-content">Карбон</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- /.slide-content -->
+        </div>
+        <!-- /.slide -->
+        <div class="slide">
+          <div class="slide-img-block">
+            <img src="img/slider/slide2.png" alt="Мотивирующий финтес-браслет" class="slide-img" width="345" height="485">
+          </div>
+          <div class="slide-content">
+            <p class="slide-title">
+              Худеем <br>правильно!
+            </p>
+            <p class="slide-text">
+              Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+              не пропускать занятия и соблюдать диету.
+            </p>
+            <a href="#" class="slide-button button">Подробнее</a>
+            <table class="slide-tabel">
+              <thead>
+                <tr class="slide-tabel-row">
+                  <th class="slide-table-title">Без подзарядки</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="slide-tabel-row">
+                  <td class="slide-tabel-content">48 часов</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- /.slide-content -->
+        </div>
+        <!-- /.slide -->
+        <div class="slide">
+          <div class="slide-img-block">
+            <img src="img/slider/slide3.png" alt="Квадрокоптер" class="slide-img" width="526" height="334">
+          </div>
+          <div class="slide-content">
+            <p class="slide-title">
+              Порхает как бабочка, <br>жалит как пчела!
+            </p>
+            <p class="slide-text">
+              Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
+              мощным лезером, замаскированным под стандартную камеру.
+            </p>
+            <a href="#" class="slide-button button">Подробнее</a>
+            <table class="slide-tabel">
+              <thead>
+                <tr class="slide-tabel-row">
+                  <th class="slide-table-title">Дальность полета</th>
+                  <th class="slide-table-title">Радиус поражения</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="slide-tabel-row">
+                  <td class="slide-tabel-content">800м</td>
+                  <td class="slide-tabel-content">50м</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!-- /.slide-content -->
+        </div>
+        <!-- /.slide -->
+      </div>
+      <!-- /.slides -->
+    </section>
+  </main>
 </body>
 </html>
