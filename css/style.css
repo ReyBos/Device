@@ -712,6 +712,8 @@ input[type="radio"].visually-hidden {
 }
 
 .slide-tabel-row {
+<<<<<<< HEAD
+=======
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
