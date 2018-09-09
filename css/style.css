@@ -64,10 +64,6 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.2em;
   font-weight: 900;
   color: #000000;
-
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .button::before {
@@ -102,13 +98,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button:active {
-  color: #f7e184;
-}
-
-.button:active::before {
-  padding-right: 118px;
-
-  background-color: #000000;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 /* header-first-line */
@@ -1071,7 +1061,7 @@ input[type="radio"].visually-hidden {
 
 /* brands */
 .brands {
-  margin-bottom: 90px;
+  margin-bottom: 141px;
 }
 
 .brands-list {
@@ -1101,4 +1091,108 @@ input[type="radio"].visually-hidden {
 
 .brands-img:hover {
   opacity: 1;
+}
+
+/* shop-info */
+.shop-info {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.shop-info-title {
+  position: relative;
+
+  padding: 0;
+  margin: 0;
+  margin-bottom: 38px;
+
+  font-size: 47px;
+  font-weight: 900;
+  line-height: 56px;
+}
+
+.shop-info-title::before {
+  content: "";
+  position: absolute;
+  top: -48px;
+  left: 0;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
+}
+
+.shop-info-text {
+  width: 486px;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", sans-serif;
+}
+
+.shop-info-text:nth-child(3) {
+  margin-top: 30px;
+}
+
+.shop-info-button {
+  width: 260px;
+}
+
+.shop-info-button::before {
+  width: 260px;
+}
+
+.about-us {
+  width: 500px;
+}
+
+.transport-company {
+  padding: 0;
+  margin: 0;
+  margin-top: 65px;
+  margin-bottom: 60px;
+
+  list-style: none;
+}
+
+.transport-company-item {
+  position: relative;
+  padding-left: 35px;
+
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 40px;
+  letter-spacing: 0;
+}
+
+.transport-company-item::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 50%;
+
+  width: 4px;
+  height: 4px;
+  margin-top: -4px;
+
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.contacts {
+  width: 560px;
+}
+
+.contacts-map {
+  width: 560px;
+  height: 222px;
+  margin-top: 38px;
+  margin-bottom: 65px;
 }
