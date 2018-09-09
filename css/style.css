@@ -872,7 +872,7 @@ input[type="radio"].visually-hidden {
 /* services */
 
 .services {
-  margin-bottom: 100px;
+  margin-bottom: 95px;
   padding-bottom: 94px;
 
   background-color: #e5e5e5;
@@ -1067,4 +1067,38 @@ input[type="radio"].visually-hidden {
 
 .services-text {
   color: #464646;
+}
+
+/* brands */
+.brands {
+  margin-bottom: 90px;
+}
+
+.brands-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.brands-item {
+  width: 260px;
+  height: 100px;
+}
+
+.brands-img {
+  width: 260px;
+  height: 100px;
+
+  opacity: 0.2;
+}
+
+.brands-img:hover {
+  opacity: 1;
 }
