@@ -256,7 +256,7 @@ input[type="radio"].visually-hidden {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.header-first-line .list-link {
+.list-link {
   position: relative;
   padding-left: 27px;
   -webkit-box-sizing: border-box;
@@ -266,7 +266,7 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.header-first-line .list-link::before {
+.list-link::before {
   content: "";
   position: absolute;
   left: 0;
@@ -276,11 +276,11 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.header-first-line .list-link:hover {
+.list-link:hover {
   opacity: 0.6;
 }
 
-.header-first-line .list-link:active {
+.list-link:active {
   opacity: 0.3;
 }
 
@@ -1061,7 +1061,7 @@ input[type="radio"].visually-hidden {
 
 /* brands */
 .brands {
-  margin-bottom: 141px;
+  margin-bottom: 143px;
 }
 
 .brands-list {
@@ -1101,7 +1101,7 @@ input[type="radio"].visually-hidden {
   display: -o-flex;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 90px;
+  margin-bottom: 85px;
 }
 
 .shop-info-title {
@@ -1195,4 +1195,221 @@ input[type="radio"].visually-hidden {
   height: 222px;
   margin-top: 38px;
   margin-bottom: 65px;
+}
+
+/* main-footer */
+
+.main-footer {
+  padding-top: 61px;
+  padding-bottom: 63px;
+  background-color: #464646;
+}
+
+.footer-first-line {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  position: static;
+
+  margin-top: 0;
+
+  color: #ffc600;
+}
+
+.main-footer .user-menu {
+  width: 110px;
+  margin-left: auto;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-footer,
+.main-footer .list-link {
+  color: #ffffff;
+}
+
+.main-footer .user-menu-link::before {
+  background-image: url(../img/footer/user.svg);
+}
+
+.main-footer .compare::before {
+  background-image: url(../img/footer/compare.svg);
+}
+
+.main-footer .cart::before {
+  background-image: url(../img/footer/cart.svg);
+}
+
+.main-footer .tabs {
+  margin-left: 0;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-second-line {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  margin-bottom: 65px;
+}
+
+.address {
+  width: 260px;
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Open Sans', sans-serif;
+}
+
+.main-footer .site-navigation {
+  margin-left: 107px;
+}
+
+.main-footer .site-navigation-link {
+  color: #ffffff;
+}
+
+.main-footer .site-navigation-item:nth-child(1) {
+  margin-right: 35px;
+}
+
+.site-navigation-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.site-navigation-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.telefone {
+  width: 180px;
+  margin-left: auto;
+
+  text-align: right;
+}
+
+.footer-third-line {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.line {
+  width: 80px;
+  height: 7px;
+  margin-top: 13px;
+
+  background-color: #ffc600;
+}
+
+.socials {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 241px;
+  padding: 0;
+  margin: 0;
+  margin-left: 379px;
+
+  list-style: none;
+}
+
+.socials-item {
+  margin-right: 23px;
+}
+
+.socials-item:last-child {
+  margin-right: 0;
+}
+
+.socials-link {
+  position: relative;
+
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.socials-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 32px;
+  height: 32px;
+}
+
+.facebook::after {
+  background-image: url(../img/footer/fb.svg);
+}
+
+.vk::after {
+  background-image: url(../img/footer/vk.svg);
+}
+
+.twitter::after {
+  background-image: url(../img/footer/twitter.svg);
+}
+
+.socials-link:hover {
+  opacity: 0.6;
+}
+
+.socials-link:active {
+  opacity: 0.1;
+}
+
+.copyright {
+  position: relative;
+
+  display: inline-block;
+  width: 26px;
+  height: 34px;
+  margin-left: auto;
+}
+
+.copyright::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 26px;
+  height: 34px;
+
+  background-image: url(../img/footer/logo-html.svg);
+}
+
+.copyright:hover {
+  opacity: 0.6;
+}
+
+.copyright:active {
+  opacity: 0.3;
 }
